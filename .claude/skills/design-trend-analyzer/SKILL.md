@@ -1,6 +1,13 @@
 ---
 name: design-trend-analyzer
-description: Analyze design trends and recommend appropriate styles, color palettes, and typography systems for your project based on current 2024-2025 design movements
+description: Analyze design trends and recommend appropriate styles, color palettes, and typography systems for your project based on current design movements. NOT for accessibility auditing or full design system creation.
+metadata:
+  category: Design & Creative
+  tags:
+    - design
+    - trends
+    - style
+    - typography
 ---
 
 # Design Trend Analyzer

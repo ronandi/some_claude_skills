@@ -1,6 +1,13 @@
 ---
 name: design-accessibility-auditor
-description: Audit designs, color palettes, and UI components for WCAG 2.1 accessibility compliance, providing specific fixes for contrast, touch targets, focus indicators, and screen reader support
+description: Audit designs, color palettes, and UI components for WCAG 2.1 accessibility compliance, providing specific fixes for contrast, touch targets, focus indicators, and screen reader support. NOT for color harmony aesthetics or design system creation.
+metadata:
+  category: Design & Creative
+  tags:
+    - accessibility
+    - wcag
+    - audit
+    - ui
 ---
 
 # Design Accessibility Auditor
@@ -36,7 +43,7 @@ The catalog data has been validated with accurate contrast calculations.
 
 | Element Type | Level AA | Level AAA |
 |-------------|----------|-----------|
-| Normal text (<18px or <14px bold) | 4.5:1 | 7:1 |
+| Normal text (&lt;18px or &lt;14px bold) | 4.5:1 | 7:1 |
 | Large text (≥18px or ≥14px bold) | 3:1 | 4.5:1 |
 | UI components & graphics | 3:1 | N/A |
 | Focus indicators | 3:1 | N/A |
