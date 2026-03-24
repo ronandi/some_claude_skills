@@ -14,4 +14,7 @@
 *~
 
 # Private skills (stay on disk, never pushed)
-.claude/skills/windags-*/
+skills/windags-*/
+
+# Debug logs
+*.log
