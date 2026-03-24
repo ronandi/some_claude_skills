@@ -7,7 +7,7 @@ A curated collection of 190+ production-ready Claude Code skills, packaged for d
 **This repo**: `ronandi/some_claude_skills` — skills-only fork for plugin distribution
 **Upstream**: `curiositech/some_claude_skills` — the original gallery website (Docusaurus + Win31 aesthetic)
 
-The upstream repo is ~600MB with a full website, images, audio, and broken git submodules. It cannot be imported as a Claude Code plugin. This fork exists to provide a clean, lightweight package of just the skills.
+The upstream repo powers a full gallery website at someclaudeskills.com and includes media assets and submodules, making it larger than what `claude plugin add` supports. This fork extracts just the skills for lightweight plugin distribution.
 
 ## Structure
 
