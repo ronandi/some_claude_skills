@@ -73,7 +73,7 @@ cp -r some_claude_skills/.claude/skills/* ~/.claude/skills/
 
 The original repo ([curiositech/some_claude_skills](https://github.com/curiositech/some_claude_skills)) includes a full Docusaurus gallery website, 150MB+ of images, audio files, and broken git submodules. This makes it too large and fragile to import as a Claude Code plugin — `claude plugin add` chokes on the size and the submodule errors.
 
-This fork strips everything except the skills themselves. Same 190+ skills, no website baggage, no broken submodules, clean plugin install.
+This fork extracts just the skills for a clean, lightweight plugin install. Same 190+ skills, no submodule issues, works out of the box with `claude plugin add`.
 
 ## Contributing
 
