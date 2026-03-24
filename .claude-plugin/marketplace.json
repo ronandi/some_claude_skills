@@ -1,0 +1,33 @@
+{
+  "name": "some-claude-skills",
+  "version": "1.0.0",
+  "description": "190+ production-ready skills for Claude Code — design, development, AI/ML, testing, career coaching, and more.",
+  "owner": {
+    "name": "ronandi"
+  },
+  "metadata": {
+    "description": "A curated collection of 190+ Claude Code skills covering design, development, AI/ML, testing, DevOps, career coaching, and more.",
+    "repository": "https://github.com/ronandi/some_claude_skills",
+    "license": "MIT"
+  },
+  "plugins": [
+    {
+      "name": "some-claude-skills",
+      "source": "./",
+      "description": "190+ production-ready skills for Claude Code — design, development, AI/ML, testing, career coaching, and more.",
+      "version": "1.0.0",
+      "category": "skills",
+      "keywords": [
+        "skills",
+        "claude-code",
+        "design",
+        "development",
+        "ai",
+        "testing",
+        "devops",
+        "career",
+        "coaching"
+      ]
+    }
+  ]
+}
