@@ -1,220 +1,87 @@
-# Claude Skills Collection
+# Some Claude Skills
 
-**135+ production-ready skills** and **2 MCP servers** for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+**190+ production-ready skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).**
 
-Built by [Erich Owens](https://www.erichowens.com) — Ex-Meta ML Engineer (12 years), 12 patents, MS Applied Math.
+Skills are modular prompt extensions that teach Claude domain expertise — decision frameworks, best practices, proven methodologies, and domain reasoning.
 
----
+## Install
 
-## Quick Start
-
-### Option 1: Plugin Marketplace (Recommended)
+### As a Claude Code Plugin
 
 ```bash
-# Add the marketplace
-/plugin marketplace add erichowens/some_claude_skills
-
-# Install any skill
-/plugin install adhd-design-expert@some-claude-skills
-
-# Or install the full collection
-/plugin install some-claude-skills@some-claude-skills
+claude plugin add ronandi/some_claude_skills
 ```
 
-### Option 2: Manual Installation
+### Manual
 
 ```bash
-git clone https://github.com/erichowens/some_claude_skills.git
+git clone git@github.com:ronandi/some_claude_skills.git
 cp -r some_claude_skills/.claude/skills/* ~/.claude/skills/
 ```
 
-### Option 3: Download Individual Skills
+## Skills
 
-**[someclaudeskills.com/skills](https://someclaudeskills.com/skills)** — Browse, search, and download ZIP files.
+### Design & Creative
+`design-system-creator` · `native-app-designer` · `typography-expert` · `vaporwave-glassomorphic-ui-designer` · `web-design-expert` · `windows-3-1-web-designer` · `windows-95-web-designer` · `interior-design-expert` · `vibe-matcher` · `design-archivist` · `2000s-visualization-expert` · `neobrutalist-web-designer` · `design-system-generator` · `design-trend-analyzer` · `dark-mode-design-expert` · `design-critic` · `design-system-documenter` · `component-template-generator` · `design-accessibility-auditor` · `color-contrast-auditor` · `color-theory-palette-harmony-expert`
 
----
+### Development & Architecture
+`code-architecture` · `code-necromancer` · `typescript-advanced-patterns` · `error-handling-patterns` · `caching-strategies` · `database-design-patterns` · `microservices-patterns` · `rest-api-design` · `api-architect` · `openapi-spec-writer` · `monorepo-management` · `dependency-management` · `refactoring-surgeon` · `logging-observability` · `performance-profiling` · `git-workflow-expert`
 
-## MCP Servers
+### Frontend
+`nextjs-app-router-expert` · `frontend-architect` · `react-performance-optimizer` · `form-validation-architect` · `pwa-expert` · `mobile-ux-optimizer` · `web-design-guidelines` · `web-weather-creator` · `web-wave-designer` · `web-cloud-designer`
 
-Add to `~/.claude/settings.json` or your project's `.mcp.json`:
+### Testing & DevOps
+`vitest-testing-patterns` · `playwright-e2e-tester` · `test-automation-expert` · `code-review-checklist` · `github-actions-pipeline-builder` · `devops-automator` · `docker-containerization` · `terraform-iac-expert` · `cloudflare-worker-dev` · `site-reliability-engineer`
 
-### prompt-learning-mcp
+### AI & ML
+`ai-engineer` · `prompt-engineer` · `clip-aware-embeddings` · `computer-vision-pipeline` · `drone-cv-expert` · `drone-inspection-specialist` · `llm-streaming-response-handler` · `automatic-stateful-prompt-improver`
 
-Your prompts get smarter every time you use Claude. Automatic optimization using APE, OPRO, and DSPy patterns.
+### Computer Vision & Graphics
+`metal-shader-expert` · `photo-composition-critic` · `photo-content-recognition-curation-expert` · `pixel-art-scaler` · `collage-layout-expert` · `physics-rendering-expert` · `vr-avatar-engineer`
 
-```json
-{
-  "mcpServers": {
-    "prompt-learning": {
-      "command": "npx",
-      "args": ["-y", "github:erichowens/prompt-learning-mcp"],
-      "env": {
-        "OPENAI_API_KEY": "your-openai-api-key"
-      }
-    }
-  }
-}
-```
+### Data & Visualization
+`data-viz-2025` · `data-pipeline-engineer` · `geospatial-data-pipeline` · `large-scale-map-visualization` · `reactflow-expert` · `mermaid-graph-writer` · `mermaid-graph-renderer` · `diagramming-expert`
 
-**Tools:** `optimize_prompt` · `record_feedback` · `retrieve_prompts` · `suggest_improvements` · `get_analytics`
+### Coaching & Career
+`career-biographer` · `cv-creator` · `job-application-optimizer` · `hr-network-analyst` · `competitive-cartographer` · `personal-finance-coach` · `wisdom-accountability-coach` · `indie-monetization-strategist` · `tech-entrepreneur-coach-adhd` · `project-management-guru-adhd`
 
-**Requirements:** Docker (Qdrant + Redis), Node.js 18+, OpenAI API key
+### Interview Prep
+`senior-coding-interview` · `ml-system-design-interview` · `anthropic-technical-deep-dive` · `tech-presentation-interview` · `values-behavioral-interview` · `hiring-manager-deep-dive` · `interview-simulator` · `interview-loop-strategist`
 
-### cv-creator-mcp
+### Health & Neuroscience
+`adhd-design-expert` · `adhd-daily-planner` · `hrv-alexithymia-expert` · `speech-pathology-ai` · `clinical-diagnostic-reasoning` · `crisis-detection-intervention-ai` · `crisis-response-protocol`
 
-Resume SEO powered by AI. ATS scoring, keyword optimization, job matching.
+### Recovery & Wellness
+`recovery-app-onboarding` · `recovery-coach-patterns` · `recovery-community-moderator` · `recovery-education-writer` · `recovery-social-features` · `recovery-app-legal-terms` · `sober-addict-protector` · `sobriety-tools-guardian` · `modern-drug-rehab-computer` · `jungian-psychologist`
 
-```json
-{
-  "mcpServers": {
-    "cv-creator": {
-      "command": "npx",
-      "args": ["-y", "github:erichowens/cv-creator-mcp"]
-    }
-  }
-}
-```
+### Meta & Orchestration
+`agent-creator` · `orchestrator` · `skill-coach` · `skill-architect` · `skill-creator` · `skill-documentarian` · `skill-grader` · `skill-logger` · `swift-executor` · `team-builder` · `research-analyst`
 
-**Tools:** `analyze_job` · `score_match` · `score_ats` · `suggest_tailoring` · `generate_variants` · `generate_cover_letter`
+### Content & Communication
+`technical-writer` · `email-composer` · `seo-visibility-expert` · `claude-ecosystem-promoter` · `video-processing-editing` · `ai-video-production-master` · `voice-audio-engineer` · `sound-engineer`
 
-**Requirements:** Node.js 18+
+### Security & Auth
+`security-auditor` · `oauth-oidc-implementer` · `modern-auth-2026`
 
----
+### Specialized
+`bot-developer` · `mcp-creator` · `real-time-collaboration-engine` · `websocket-streaming` · `background-job-orchestrator` · `document-generation-pdf` · `chatbot-analytics` · `event-detection-temporal-intelligence-expert` · `checklist-discipline` · `systems-thinking` · `human-centered-design-fundamentals`
 
-## What Are Claude Skills?
+### Lifestyle
+`fancy-yard-landscaper` · `interior-design-expert` · `maximalist-wall-decorator` · `panic-room-finder` · `pet-memorial-creator` · `grief-companion` · `wedding-immortalist` · `partner-text-coach`
 
-Skills are modular prompt extensions that teach Claude domain expertise. Instead of telling Claude what to do, skills teach Claude:
+## Why This Fork Exists
 
-| Aspect | What Skills Provide |
-|--------|---------------------|
-| **How experts think** | Decision frameworks, mental models |
-| **What experts know** | Domain knowledge, best practices |
-| **How experts work** | Proven methodologies, workflows |
-| **Why experts choose** | Reasoning behind decisions |
+The original repo ([curiositech/some_claude_skills](https://github.com/curiositech/some_claude_skills)) includes a full Docusaurus gallery website, 150MB+ of images, audio files, and broken git submodules. This makes it too large and fragile to import as a Claude Code plugin — `claude plugin add` chokes on the size and the submodule errors.
 
-Read the full guide: **[How to Write Great Claude Skills](https://someclaudeskills.com/docs/guides/claude-skills-guide)**
-
----
-
-## Skills by Category
-
-### Design & Creative (10 skills)
-
-| Skill | Description |
-|-------|-------------|
-| `design-system-creator` | Design tokens, CSS architecture, component libraries |
-| `native-app-designer` | iOS/Mac/web apps with organic, non-AI aesthetic |
-| `typography-expert` | Font pairing, hierarchy, OpenType features |
-| `vaporwave-glassomorphic-ui-designer` | Retro-futuristic UI with glassmorphism |
-| `web-design-expert` | Brand identity, color theory, UI/UX |
-| `windows-3-1-web-designer` | Windows 3.1 aesthetic (powers this site!) |
-| `interior-design-expert` | Space planning, color theory, lighting |
-| `vibe-matcher` | Translate emotional vibes to visual DNA |
-| `design-archivist` | Build visual databases from 500-1000 examples |
-| `2000s-visualization-expert` | Milkdrop, AVS, WebGL music visualizers |
-
-### Computer Vision & Graphics (8 skills)
-
-| Skill | Description |
-|-------|-------------|
-| `clip-aware-embeddings` | Semantic image-text matching with CLIP |
-| `collage-layout-expert` | Hockney-style computational collage composition |
-| `color-theory-palette-harmony-expert` | Color science for photo composition |
-| `drone-cv-expert` | Drone systems, SLAM, object detection |
-| `drone-inspection-specialist` | Infrastructure inspection, thermal analysis |
-| `metal-shader-expert` | Real-time graphics, MSL shaders, PBR |
-| `photo-composition-critic` | Graduate-level visual aesthetics analysis |
-| `photo-content-recognition-curation-expert` | Face/place recognition, de-duplication |
-
-### Development & Engineering (8 skills)
-
-| Skill | Description |
-|-------|-------------|
-| `bot-developer` | Discord, Telegram, Slack automation |
-| `physics-rendering-expert` | Rope/cable dynamics, constraint solving |
-| `site-reliability-engineer` | Docusaurus build validation, pre-commit hooks |
-| `sound-engineer` | Spatial audio, procedural sound design |
-| `voice-audio-engineer` | ElevenLabs integration, TTS, audio processing |
-| `vr-avatar-engineer` | VR avatars, motion capture, real-time animation |
-| `event-detection-temporal-intelligence-expert` | ST-DBSCAN, temporal event detection |
-| `code-necromancer` | Resurrect and modernize legacy codebases |
-
-### Coaching & Personal Development (11 skills)
-
-| Skill | Description |
-|-------|-------------|
-| `career-biographer` | Extract structured career narratives |
-| `competitive-cartographer` | Map competitive landscapes, find white space |
-| `cv-creator` | ATS-optimized resumes in multiple formats |
-| `hr-network-analyst` | Professional network graph analysis |
-| `job-application-optimizer` | Resume SEO and job matching |
-| `jungian-psychologist` | Analytical psychology, shadow work |
-| `personal-finance-coach` | Tax optimization, investment theory |
-| `project-management-guru-adhd` | PM for ADHD engineers |
-| `tech-entrepreneur-coach-adhd` | Big tech → indie founder transition |
-| `wisdom-accountability-coach` | Philosophy teaching, commitment tracking |
-| `indie-monetization-strategist` | Freemium, SaaS pricing, passive income |
-
-### Health & Neuroscience (3 skills)
-
-| Skill | Description |
-|-------|-------------|
-| `adhd-design-expert` | Neuroscience-backed UX for ADHD brains |
-| `hrv-alexithymia-expert` | HRV biometrics, interoception training |
-| `speech-pathology-ai` | Speech therapy, phoneme analysis |
-
-### Meta & Orchestration (8 skills)
-
-| Skill | Description |
-|-------|-------------|
-| `agent-creator` | Create new custom agents, skills, MCP integrations |
-| `orchestrator` | Coordinate specialists and create skills on-the-fly |
-| `research-analyst` | Landscape research, competitive analysis |
-| `skill-coach` | Guide creation of high-quality Claude Skills |
-| `skill-documentarian` | Document skills, sync showcase website |
-| `swift-executor` | Rapid task execution without hesitation |
-| `team-builder` | Team composition, personality balancing, skill gap analysis |
-| `automatic-stateful-prompt-improver` | Auto-optimize prompts with APE, OPRO, DSPy |
-| `seo-visibility-expert` | SEO, llms.txt, Answer Engine Optimization |
-
----
-
-## Documentation
-
-| Resource | Description |
-|----------|-------------|
-| **[Skills Gallery](https://someclaudeskills.com/skills)** | Browse all skills with search and filtering |
-| **[Skills Guide](https://someclaudeskills.com/docs/guides/claude-skills-guide)** | How skills work and how to create your own |
-| **[Artifacts](https://someclaudeskills.com/artifacts)** | Real-world examples showing skills in action |
-| **[Full Docs](https://someclaudeskills.com/docs/intro)** | Complete documentation |
-
----
-
-## Philosophy
-
-These skills embody **AI that knows better than you** in specific domains.
-
-The result? AI agents that bring genuine expertise to every interaction — not just following instructions, but understanding *why* certain approaches work.
-
----
+This fork strips everything except the skills themselves. Same 190+ skills, no website baggage, no broken submodules, clean plugin install.
 
 ## Contributing
 
-1. Follow the structure in `.claude/skills/`
-2. Include clear mission, competencies, and outputs
-3. Provide examples and best practices
+1. Create `.claude/skills/<skill-name>/SKILL.md`
+2. Include frontmatter: `name`, `description`, and trigger `metadata`
+3. Add `references/` for supporting docs if needed
 4. Submit a PR
-
-See the **[Skills Guide](https://someclaudeskills.com/docs/guides/claude-skills-guide)** for detailed instructions.
-
----
 
 ## License
 
-MIT License — See [LICENSE](LICENSE)
-
----
-
-**Built by [Erich Owens](https://www.erichowens.com)** · Ex-Meta 12 years · 12 Patents · MS Applied Math
-
-*Documentation is a love letter to your future self. Skills are a love letter to Claude.*
+MIT — See [LICENSE](LICENSE)
