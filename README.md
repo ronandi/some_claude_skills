@@ -6,13 +6,26 @@ Skills are modular prompt extensions that teach Claude domain expertise — deci
 
 ## Install
 
-### As a Claude Code Plugin
+### Option 1: Plugin Marketplace (Recommended)
+
+```bash
+# Add the marketplace
+/plugin marketplace add ronandi/some_claude_skills
+
+# Install any skill
+/plugin install adhd-design-expert@some-claude-skills
+
+# Or install the full collection
+/plugin install some-claude-skills@some-claude-skills
+```
+
+### Option 2: Direct Plugin Install
 
 ```bash
 claude plugin add ronandi/some_claude_skills
 ```
 
-### Manual
+### Option 3: Manual
 
 ```bash
 git clone git@github.com:ronandi/some_claude_skills.git
